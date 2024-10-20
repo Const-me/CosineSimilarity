@@ -15,6 +15,19 @@ Note the X-axis is logarithmic, while the Y-axis is linear.
 
 The Excel file is available in the Results subfolder.
 
+The scalar C++ version is bottlenecked by compute rather than RAM bandwidth.\
+The first data point represents 128k elements (1MB of data across two vectors), which fits within the L2 cache of a single core.\
+The last point represents 32M elements (256MB of data across two vectors), far exceeding the L3 cache.
+Despite this, the graph remains flat for the scalar implementation.
+
+For the other implementations, memory becomes the bottleneck.
+Note the significant increase in time after 2M elements. At this point, the data size is 16MB, matching my CPU’s L3 cache size of 16MB.
+
+Another interesting point: the maximum time for the OpenMP version (not shown in the graphs, but available in the Excel file) is quite high for small buffer sizes.\
+This is due to the overhead of launching threads for the thread pool.\
+If OpenMP is used extensively in a program, the threads are launched once and stay active.
+However, if your process only does a single task and then quits without processing much data, the thread launch overhead becomes noticeable.
+
 As you can see, I couldn’t reproduce the original author's results.
 On my machine, Python was faster than scalar C++ but slower than even the naïve SIMD version.
 
