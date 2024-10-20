@@ -36,11 +36,11 @@ Install Visual Studio 2022; I’m using the freeware community edition.
 
 Clone this repository
 
-Double click on the CosineSimBench\CosineSimBench.sln, switch t Release configuration, and build.
+Double click on the `CosineSimBench\CosineSimBench.sln`, switch to Release configuration, and build.
 
 ### Linux
 
-Clone this repository, then run the following commands
+Clone this repository, then run the following commands:
 
 ```
 sudo apt install -y build-essential cmake gcc g++
