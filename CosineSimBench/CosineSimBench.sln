@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CosineSimBench", "CosineSimBench.vcxproj", "{F26D7567-C624-4580-90BA-D65BA1F9A288}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F26D7567-C624-4580-90BA-D65BA1F9A288}.Debug|x64.ActiveCfg = Debug|x64
+		{F26D7567-C624-4580-90BA-D65BA1F9A288}.Debug|x64.Build.0 = Debug|x64
+		{F26D7567-C624-4580-90BA-D65BA1F9A288}.Release|x64.ActiveCfg = Release|x64
+		{F26D7567-C624-4580-90BA-D65BA1F9A288}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50014AFC-9056-4109-8662-BE96F9A421E6}
+	EndGlobalSection
+EndGlobal

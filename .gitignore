@@ -1,0 +1,7 @@
+CosineSimBench/.vs/
+CosineSimBench/CosineSimBench/x64/
+CosineSimBench/x64/
+CosineSimBench/build/
+CosineSimBench/Python/__pycache__/
+CosineSimBench/benchmark-log.tsv
+CosineSimBench/Python/python-log.tsv

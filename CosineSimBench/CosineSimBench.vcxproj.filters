@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Utils\alignedVector.hpp" />
+    <ClInclude Include="Utils\benchmarkUtils.h" />
+    <ClInclude Include="Utils\simdUtils.h" />
+    <ClInclude Include="Tests\cosineSim.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Utils\benchmarkUtils.cpp" />
+    <ClCompile Include="cosineSimdBench.cpp" />
+    <ClCompile Include="Utils\simdUtils.cpp" />
+    <ClCompile Include="Tests\scalar.cpp" />
+    <ClCompile Include="Tests\simdNaive.cpp" />
+    <ClCompile Include="Tests\simdUnrolled.cpp" />
+    <ClCompile Include="Tests\simdParallel.cpp" />
+  </ItemGroup>
+</Project>
