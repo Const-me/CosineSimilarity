@@ -5,7 +5,7 @@ This post is a response to [this article](https://joseprupi.github.io/misc/2024/
 Specifically, I’ve implemented two faster SIMD versions of the same algorithm in C++:
 
 * One is a manually unrolled version that uses 4 sets of accumulators to workaround the relatively high latency of FMA instructions.
-* The other one does the same but also splits the work across 8 CPU threads using [OpenMP](https://en.wikipedia.org/wiki/OpenMP), hopefully running on 8 dufferent CPU cores.
+* The other one does the same but also splits the work across 8 CPU threads using [OpenMP](https://en.wikipedia.org/wiki/OpenMP), hopefully running on 8 different CPU cores.
 
 Here’s the result from my desktop computer with a Ryzen 7 [8700G](https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-7-8700g.html) processor.
 
@@ -45,10 +45,8 @@ I hope the performance cost of that is negligible, at least for long inputs.
 
 ### Windows
 
-Install Visual Studio 2022; I’m using the freeware community edition.
-
-Clone this repository
-
+Install Visual Studio 2022; I’m using the freeware community edition.\
+Clone this repository.\
 Double click on the `CosineSimBench\CosineSimBench.sln`, switch to Release configuration, and build.
 
 ### Linux
